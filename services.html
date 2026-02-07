@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - LuxeBeauty</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-white border-bottom">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/images/logo.png" alt="LuxeBeauty" height="40" class="me-2">
+                    <span>LuxeBeauty</span>
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                        <div class="d-flex align-items-center">
+                            <a href="login.html" class="btn btn-outline-custom me-2 btn-sm">Login</a>
+                            <a href="register.html" class="btn btn-primary-custom btn-sm">Sign Up</a>
+                            <div class="theme-switch ms-3"><i class="bi bi-moon"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section-padding bg-light mt-5">
+        <div class="container text-center">
+            <h1 class="display-4">Our Services</h1>
+            <p class="text-muted">Choose from our wide range of premium beauty treatments.</p>
+        </div>
+    </section>
+
+    <!-- Category Filter (Tabs) -->
+    <section class="section-padding pb-0">
+        <div class="container">
+            <ul class="nav nav-pills justify-content-center mb-5" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active rounded-pill px-4" id="pills-all-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-all" type="button" role="tab">All</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill px-4" id="pills-hair-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-hair" type="button" role="tab">Hair</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill px-4" id="pills-makeup-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-makeup" type="button" role="tab">Makeup</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill px-4" id="pills-nails-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-nails" type="button" role="tab">Nails</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="tab-content" id="pills-tabContent">
+
+                <!-- ALL TAB -->
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel">
+                    <div class="row g-4">
+                        <!-- Hair Item -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                    class="card-img-top service-card-img" alt="Haircut">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="card-title mb-0">Signature Haircut</h5>
+                                        <span class="badge bg-light text-dark">$40+</span>
+                                    </div>
+                                    <p class="card-text text-muted small">Includes wash, cut, and blowdry style.</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <small class="text-muted"><i class="bi bi-clock"></i> 45 Mins</small>
+                                        <a href="service-details.html" class="btn btn-sm btn-primary-custom">Book</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Makeup Item -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                    class="card-img-top service-card-img" alt="Makeup">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="card-title mb-0">Event Makeup</h5>
+                                        <span class="badge bg-light text-dark">$60+</span>
+                                    </div>
+                                    <p class="card-text text-muted small">Full face makeup application with lashes.</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <small class="text-muted"><i class="bi bi-clock"></i> 60 Mins</small>
+                                        <a href="service-details.html" class="btn btn-sm btn-primary-custom">Book</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Nails Item -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                    class="card-img-top service-card-img" alt="Nails">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="card-title mb-0">Gel Manicure</h5>
+                                        <span class="badge bg-light text-dark">$35+</span>
+                                    </div>
+                                    <p class="card-text text-muted small">Long-lasting gel polish with cuticle care.</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <small class="text-muted"><i class="bi bi-clock"></i> 45 Mins</small>
+                                        <a href="service-details.html" class="btn btn-sm btn-primary-custom">Book</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more items as needed to fill the page visually -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                    class="card-img-top service-card-img" alt="Bridal">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="card-title mb-0">Bridal Package</h5>
+                                        <span class="badge bg-light text-dark">$250+</span>
+                                    </div>
+                                    <p class="card-text text-muted small">Complete hair and makeup trial + wedding day.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <small class="text-muted"><i class="bi bi-clock"></i> 180 Mins</small>
+                                        <a href="service-details.html" class="btn btn-sm btn-primary-custom">Book</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- New Service Item 1 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                    class="card-img-top service-card-img" alt="Facial">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="card-title mb-0">Rejuvenating Facial</h5>
+                                        <span class="badge bg-light text-dark">$85+</span>
+                                    </div>
+                                    <p class="card-text text-muted small">Deep cleansing and hydration for glowing skin.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <small class="text-muted"><i class="bi bi-clock"></i> 60 Mins</small>
+                                        <a href="service-details.html" class="btn btn-sm btn-primary-custom">Book</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- New Service Item 2 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1621644827024-e8a6c6e1e36d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                    class="card-img-top service-card-img" alt="Balayage">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="card-title mb-0">Balayage Coloring</h5>
+                                        <span class="badge bg-light text-dark">$120+</span>
+                                    </div>
+                                    <p class="card-text text-muted small">Natural-looking, hand-painted highlights.</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <small class="text-muted"><i class="bi bi-clock"></i> 120 Mins</small>
+                                        <a href="service-details.html" class="btn btn-sm btn-primary-custom">Book</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Hair Tab (Subset of ALl) -->
+                <div class="tab-pane fade" id="pills-hair" role="tabpanel">
+                    <div class="alert alert-light text-center">Filter active: Showing Hair Services</div>
+                    <div class="row g-4">
+                        <!-- Duplicate Hair Item for Demo -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                    class="card-img-top service-card-img" alt="Haircut">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="card-title mb-0">Signature Haircut</h5>
+                                        <span class="badge bg-light text-dark">$40+</span>
+                                    </div>
+                                    <p class="card-text text-muted small">Includes wash, cut, and blowdry style.</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <small class="text-muted"><i class="bi bi-clock"></i> 45 Mins</small>
+                                        <a href="service-details.html" class="btn btn-sm btn-primary-custom">Book</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other tabs similarly... Keeping it simple -->
+                <div class="tab-pane fade" id="pills-makeup" role="tabpanel">
+                    <p class="text-center text-muted py-5">Makeup services...</p>
+                </div>
+                <div class="tab-pane fade" id="pills-nails" role="tabpanel">
+                    <p class="text-center text-muted py-5">Nail services...</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="text-primary-custom">How It Works</h5>
+                <h2>Simple Steps to Beauty</h2>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="process-step">
+                        <div class="icon-box mb-3 rounded-circle bg-light d-inline-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <span class="h3 mb-0 text-primary-custom">1</span>
+                        </div>
+                        <h5>Select Service</h5>
+                        <p class="text-muted small">Browse our wide range of services and choose what you need.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-step">
+                        <div class="icon-box mb-3 rounded-circle bg-light d-inline-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <span class="h3 mb-0 text-primary-custom">2</span>
+                        </div>
+                        <h5>Choose Stylist</h5>
+                        <p class="text-muted small">Pick a professional based on their profile and ratings.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-step">
+                        <div class="icon-box mb-3 rounded-circle bg-light d-inline-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <span class="h3 mb-0 text-primary-custom">3</span>
+                        </div>
+                        <h5>Book Online</h5>
+                        <p class="text-muted small">Select a date and time that fits your schedule.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-step">
+                        <div class="icon-box mb-3 rounded-circle bg-light d-inline-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px;">
+                            <span class="h3 mb-0 text-primary-custom">4</span>
+                        </div>
+                        <h5>Enjoy</h5>
+                        <p class="text-muted small">Relax and let our experts take care of the rest.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white">LuxeBeauty</h5>
+                    <p>Your premier destination for beauty and wellness. Multiple stylists, one platform.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white">Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white">Newsletter</h5>
+                    <p>Subscribe to get the latest beauty tips and offers.</p>
+                    <form class="d-flex mt-3">
+                        <input type="email" class="form-control me-2" placeholder="Your Email">
+                        <button class="btn btn-primary-custom" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-4 border-top border-secondary">
+                <p class="mb-0">&copy; 2026 LuxeBeauty. All Rights Reserved.</p>
+                <!-- Back to top removed -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Blog - LuxeBeauty</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-white border-bottom">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/images/logo.png" alt="LuxeBeauty" height="40" class="me-2">
+                    <span>LuxeBeauty</span>
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                        <div class="d-flex align-items-center">
+                            <a href="login.html" class="btn btn-outline-custom me-2 btn-sm">Login</a>
+                            <a href="register.html" class="btn btn-primary-custom btn-sm">Sign Up</a>
+                            <div class="theme-switch ms-3"><i class="bi bi-moon"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section-padding bg-light mt-5">
+        <div class="container text-center">
+            <h1 class="display-4">Beauty Journal</h1>
+            <p class="text-muted">Trends, tips, and tales from our experts.</p>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Blog Item 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top" alt="Blog 1" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <div class="small text-muted mb-2">October 15, 2026 • Hair Care</div>
+                            <h4 class="card-title h5"><a href="blog-details.html" class="text-dark">5 Tips for
+                                    Maintaining Balayage</a></h4>
+                            <p class="card-text text-muted">Keep your color fresh and vibrant between salon visits with
+                                these expert tips.</p>
+                            <a href="blog-details.html" class="text-primary-custom fw-bold">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Item 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top" alt="Blog 2" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <div class="small text-muted mb-2">October 10, 2026 • Wellness</div>
+                            <h4 class="card-title h5"><a href="blog-details.html" class="text-dark">The Benefits of
+                                    Regular Facials</a></h4>
+                            <p class="card-text text-muted">Why your skin needs professional attention at least once a
+                                month.</p>
+                            <a href="blog-details.html" class="text-primary-custom fw-bold">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Item 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top" alt="Blog 3" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <div class="small text-muted mb-2">October 05, 2026 • Nails</div>
+                            <h4 class="card-title h5"><a href="blog-details.html" class="text-dark">Top Nail Art Trends
+                                    for Winter</a></h4>
+                            <p class="card-text text-muted">From moody tones to metallic accents, see what's trending
+                                this season.</p>
+                            <a href="blog-details.html" class="text-primary-custom fw-bold">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Blog Item 4 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top" alt="Blog 4" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <div class="small text-muted mb-2">September 28, 2026 • Wellness</div>
+                            <h4 class="card-title h5"><a href="blog-details.html" class="text-dark">Self-Care Sunday
+                                    Routine</a></h4>
+                            <p class="card-text text-muted">Recharge your body and mind with our ultimate guide to a
+                                relaxing weekend.</p>
+                            <a href="blog-details.html" class="text-primary-custom fw-bold">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Blog Item 5 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1487412942485-6d6c29759c86?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top" alt="Blog 5" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <div class="small text-muted mb-2">September 20, 2026 • Makeup</div>
+                            <h4 class="card-title h5"><a href="blog-details.html" class="text-dark">Everyday Makeup
+                                    Essentials</a></h4>
+                            <p class="card-text text-muted">The must-have products you need for a quick and flawless
+                                daily look.</p>
+                            <a href="blog-details.html" class="text-primary-custom fw-bold">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Blog Item 6 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1595476103518-3c8ad8cfde89?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top" alt="Blog 6" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <div class="small text-muted mb-2">September 15, 2026 • Hair</div>
+                            <h4 class="card-title h5"><a href="blog-details.html" class="text-dark">Best Hairstyles for
+                                    Fall</a></h4>
+                            <p class="card-text text-muted">Discover the hottest cuts and colors to try this upcoming
+                                season.</p>
+                            <a href="blog-details.html" class="text-primary-custom fw-bold">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="mt-5 text-center">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link bg-primary-custom border-primary-custom"
+                                href="#">1</a></li>
+                        <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white">LuxeBeauty</h5>
+                    <p>Your premier destination for beauty and wellness. Multiple stylists, one platform.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white">Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white">Newsletter</h5>
+                    <p>Subscribe to get the latest beauty tips and offers.</p>
+                    <form class="d-flex mt-3">
+                        <input type="email" class="form-control me-2" placeholder="Your Email">
+                        <button class="btn btn-primary-custom" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-4 border-top border-secondary">
+                <p class="mb-0">&copy; 2026 LuxeBeauty. All Rights Reserved.</p>
+                <!-- Back to top removed -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

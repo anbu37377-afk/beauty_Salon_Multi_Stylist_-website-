@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - LuxeBeauty</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="border-end" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-dark text-white d-flex align-items-center">
+                <img src="assets/images/logo.png" alt="LuxeBeauty" height="40" class="me-2">
+                <span>LuxeBeauty</span>
+            </div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3 active" href="#!"><i
+                        class="bi bi-speedometer2 me-2"></i> Dashboard</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!"><i
+                        class="bi bi-calendar-check me-2"></i> Appointments</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!"><i
+                        class="bi bi-people me-2"></i> Stylists</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!"><i
+                        class="bi bi-person-lines-fill me-2"></i> Customers</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!"><i
+                        class="bi bi-graph-up me-2"></i> Reports</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!"><i
+                        class="bi bi-gear me-2"></i> Settings</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger p-3 mt-5" href="login.html"><i
+                        class="bi bi-box-arrow-left me-2"></i> Logout</a>
+            </div>
+        </div>
+
+        <!-- Page Content Wrapper -->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+                <div class="container-fluid">
+                    <button class="btn btn-outline-secondary" id="menu-toggle"><i class="bi bi-list"></i></button>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0 align-items-center">
+                            <li class="nav-item active"><a class="nav-link" href="index.html" target="_blank">View
+                                    Site</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" id="navbarDropdown"
+                                    href="#" role="button" data-bs-toggle="dropdown">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Admin"
+                                        class="rounded-circle me-2" width="30" height="30">
+                                    Admin User
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#!">Profile</a>
+                                    <a class="dropdown-item" href="#!">Settings</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="login.html">Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="container-fluid px-4 py-4">
+
+                <h2 class="mb-4">Dashboard Overview</h2>
+
+                <!-- Stats Cards -->
+                <div class="row g-4 mb-4">
+                    <div class="col-md-3">
+                        <div class="card bg-primary-custom text-white h-100">
+                            <div class="card-body">
+                                <h6 class="text-uppercase">Total Bookings</h6>
+                                <h2 class="mb-0">1,245</h2>
+                                <small>+15% from last month</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-success text-white h-100">
+                            <div class="card-body">
+                                <h6 class="text-uppercase">Total Revenue</h6>
+                                <h2 class="mb-0">$45,200</h2>
+                                <small>+8% from last month</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-white h-100">
+                            <div class="card-body">
+                                <h6 class="text-uppercase">Active Stylists</h6>
+                                <h2 class="mb-0">12</h2>
+                                <small>All lines active</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-info text-white h-100">
+                            <div class="card-body">
+                                <h6 class="text-uppercase">New Customers</h6>
+                                <h2 class="mb-0">85</h2>
+                                <small>This week</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts & Tables -->
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header bg-white">
+                                <h5 class="mb-0">Revenue Overview</h5>
+                            </div>
+                            <div class="card-body">
+                                <canvas id="revenueChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Recent Appointments</h5>
+                                <button class="btn btn-sm btn-outline-primary">View All</button>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table table-hover align-middle mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Customer</th>
+                                                <th>Stylist</th>
+                                                <th>Service</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center"><img
+                                                            src="https://randomuser.me/api/portraits/women/12.jpg"
+                                                            class="rounded-circle me-2" width="30"> Jane Doe</div>
+                                                </td>
+                                                <td>Sarah Jenkins</td>
+                                                <td>Haircut</td>
+                                                <td><span class="badge bg-success">Confirmed</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center"><img
+                                                            src="https://randomuser.me/api/portraits/men/45.jpg"
+                                                            class="rounded-circle me-2" width="30"> John Smith</div>
+                                                </td>
+                                                <td>Michael Ross</td>
+                                                <td>Massage</td>
+                                                <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center"><img
+                                                            src="https://randomuser.me/api/portraits/women/65.jpg"
+                                                            class="rounded-circle me-2" width="30"> Emily Blunt</div>
+                                                </td>
+                                                <td>Sarah Jenkins</td>
+                                                <td>Balayage</td>
+                                                <td><span class="badge bg-success">Confirmed</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center"><img
+                                                            src="https://randomuser.me/api/portraits/women/33.jpg"
+                                                            class="rounded-circle me-2" width="30"> Lisa Wong</div>
+                                                </td>
+                                                <td>Emily Chen</td>
+                                                <td>Manicure</td>
+                                                <td><span class="badge bg-secondary">Completed</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Main JS (for toggle) -->
+    <script src="assets/js/main.js"></script>
+    <!-- Dashboard Specific JS -->
+    <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>
