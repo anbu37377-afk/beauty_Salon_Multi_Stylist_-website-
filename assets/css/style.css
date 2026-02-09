@@ -59,6 +59,18 @@
     color: var(--dark-text) !important;
 }
 
+/* Remove dark box behind menu on desktop */
+@media (min-width: 992px) {
+
+    .offcanvas,
+    .offcanvas-body,
+    [data-theme="dark"] .offcanvas,
+    [data-theme="dark"] .offcanvas-body {
+        background-color: transparent !important;
+        background: transparent !important;
+    }
+}
+
 [data-theme="dark"] .offcanvas .btn-close {
     filter: invert(1) grayscale(100%) brightness(200%);
 }
@@ -220,6 +232,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    align-items: center;
 }
 
 .card-body .btn {
@@ -229,6 +242,18 @@ a:hover {
 
 .card:hover {
     transform: translateY(-5px);
+}
+
+/* Blog card Read More alignment */
+.card-body>a.text-primary-custom {
+    margin-top: auto;
+}
+
+/* Center incomplete rows in tablet view for blog cards */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .section-padding .row.g-4 {
+        justify-content: center;
+    }
 }
 
 /* Header & Navbar */
@@ -291,8 +316,8 @@ a:hover {
 .hero {
     position: relative;
     background: url('../images/hero-bg-placeholder.jpg') no-repeat center center/cover;
-    height: 85vh;
-    /* Large hero */
+    height: 100vh;
+    /* Full viewport hero */
     display: flex;
     align-items: center;
     color: white;
