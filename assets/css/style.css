@@ -463,6 +463,19 @@ body.sb-sidenav-toggled #sidebar-wrapper {
     }
 }
 
+/* Active nav tabs styling */
+.nav-pills .nav-link.active {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-color: var(--primary-color) !important;
+}
+
+.nav-pills .nav-link:not(.active) {
+    background-color: transparent !important;
+    color: var(--dark-text) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero h1 {
